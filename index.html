@@ -287,7 +287,7 @@
     // Update date and time display (two rows: date and live time)
     function updateDateTime() {
       const now = new Date();
-      const options = { weekday: 'long', day: 'numeric', month: 'numeric', year: 'numeric' };
+      const options = { weekday: 'short', day: 'numeric', month: 'numeric', year: 'numeric' };
       dateDisplay.textContent = now.toLocaleDateString(undefined, options);
       timeDisplay.textContent = now.toLocaleTimeString();
     }
